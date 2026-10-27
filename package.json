@@ -1,0 +1,41 @@
+{
+  "name": "wc-uri",
+  "version": "0.0.1",
+  "description": "Generate a WalletConnect pairing link (wc:…) for any set of networks, like react-app.walletconnect.com does. Handy for testing wallets.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "wc-uri": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "walletconnect",
+    "reown",
+    "pairing",
+    "uri",
+    "cli",
+    "wallet",
+    "testing"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "prepare": "node build.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/qrcode-terminal": "0.12.2",
+    "@walletconnect/logger": "3.0.2",
+    "@walletconnect/sign-client": "2.23.10",
+    "@walletconnect/types": "2.23.10",
+    "esbuild": "0.28.2",
+    "qrcode-terminal": "0.12.0",
+    "typescript": "5.8.3"
+  }
+}
